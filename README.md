@@ -2,4 +2,8 @@ WebPortfolio
 ============
 
 Contains my works in the field of Internet technologies
-layouts folder: contains converted psd-layouts
+<br>
+Folders:
+<ul>
+  <li>layouts: contains converted psd-layouts</li>
+</ul>

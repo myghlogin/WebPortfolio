@@ -6,4 +6,10 @@ Contains my works in the field of Internet technologies
 Folders:
 <ul>
   <li>layouts: contains converted psd-layouts</li>
+  <li>
+    sites: contains completed sites
+    <ul>
+      <li>firesnake: game like snake. Look at firesnake.esy.es.</li>
+    </ul>
+  </li>
 </ul>

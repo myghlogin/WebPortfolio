@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Promobile</title>
+		<meta charset="cp1251">
+		<link href="js/jquery-ui-1.10.3.custom/css/start/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" >
+		<link href="css/style.css" rel="stylesheet">
+		<script type="text/javascript" language="javascript" src="js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(window).ready(function()
+			{
+				var rb = $("#rightContent");
+				var lb = $("#leftContentBlock");
+				rb.height(lb.height()-30);
+				
+				$("div.progressBar").progressbar({value: 50});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="loginContainer">
+			<div class="centerBlock">
+				<div id="logo"></div>
+				<div id="login">
+					<form method="post" action="file.php">
+						<div>
+							<div class="left smallMarginRight">
+								<label>
+									<span class="text1Gray">Логин:</span><br>
+									<input name="loginBox" id="loginBox" type="text" size="8" class="textBox">
+								</label>
+							</div>
+							<div class="left">
+								<label>
+									<span class="text1Gray">Пароль:</span><br>
+									<input name="passwordBox" id="passwordBox" type="password" size="8" class="textBox">
+								</label>						
+							</div>
+						</div>
+						<div class="clear smallMarginBottom"></div>	
+						<div>
+							<table>
+								<tr>
+									<td class="smallPaddingRight">
+										<a href="" onClick="" class="btn text1White bold">Вход</a>
+									</td>
+									<td>
+										<a href="" class="text1Blue underline">Регистрация</a><br>
+										<a href="" class="text1Blue underline">Забыли пароль?</a>
+									</td>
+								<tr>
+							</table>
+						</div>
+					</form>
+				</div>
+				<div id="banner"></div>
+				<div id="cornerOverBlueLeft"></div>
+				<div id="cornerOverBlueRight"></div>
+				<div id="cornerOverGreenRight"></div>
+				<div id="cornerBlueLeft"></div>
+				<div id="cornerGreenLeft"></div>
+			</div>
+		</div>
+		<div class="hr"></div>
+		<br><br>
+		<div id="mainMenuContainer" class="centerBlock">
+			<ul id="mainMenu">
+				<li><a href="" class="text4White selectedFlag">Главная</a></li>
+				<li><a href="" class="text4Gray unselectedFlag">Мобильные новости</a></li>
+				<li><a href="" class="text4Gray unselectedFlag">Форум</a></li>
+				<li><a href="" class="text4Gray unselectedFlag">FM радио</a></li>
+				<li><a href="" class="text4Gray unselectedFlag">FAQ</a></li>
+			</ul>
+			<div id="search">
+				<form method="post" action="file.php">
+					<input name="searchBox" id="searchBox" type="text" class="text2Gray">
+					<input name="searchBtn" id="searchBtn" type="submit" value="">
+				</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<br><br>
+		<div id="content" class="centerBlock">
+			<div id="leftContentBlock">
+				<div id="leftContent">
+					<div id="leftMenu">
+						<aside id="navigation">
+							<p class="text3Blue bold">НАВИГАЦИЯ</p>
+							<br>
+							<ul>
+								<li><a href="" class="text1Gray">Игры</a></li>
+								<li><a href="" class="text1Gray">Программы</a></li>
+								<li><a href="" class="text1Gray">Темы и Обои</a></li>
+								<li><a href="" class="text1Gray">Разное</a></li>
+								<li><a href="" class="text1Gray">Мобильные телефоны</a></li>
+								<li><a href="" class="text1Gray">GPS навигаторы</a></li>
+								<li><a href="" class="text1Gray">MP3 плееры</a></li>
+								<li><a href="" class="text1Gray">Bluetooth гарнитуры</a></li>
+							</ul>
+						</aside>
+						<br>
+						<a href="" id="register"></a>
+						<br><br>
+						<aside class="rightPadding">
+							<p class="text3Blue bold">ОПРОСЫ</p>
+							<div class="linedBlock text1Gary italic">Какой марки у Вас мобильник</div>
+							<p class="text1Gray italic">SonyErricson</p>
+							<div class="progressBar"></div>
+							<p class="text1Gray italic">Nokia</p>
+							<div class="progressBar"></div>
+							<p class="text1Gray italic">Apple</p>
+							<div class="progressBar"></div>
+							<p><a href="" class="text1Blue underline">Проголосовало: 123</a></p>
+							<p><a href="" class="text1Blue underline">Другие опросы</a></p>
+						</aside>
+						<br><br>
+						<aside class="rightPadding">
+							<p class="text3Blue bold">САМОЕ ВКУСНОЕ</p>
+							<div class="linedDelimiter"></div>
+							<div>
+								<p><a href="" class="text1Blue underline bold">Garmin Mobile XT6.00.10</a></p>
+								<p class="text1Gray">(gps навигатор для смартфонов с операционной системой symbian 9.4)</p>
+							</div>
+							<div class="linedDelimiter"></div>
+							<div>
+								<p><a href="" class="text1Blue underline bold">Jimm 0.5.2b</a></p>
+								<p class="text1Gray">(популярный java icq клиент для обычных телефонов и смартов)</p>
+							</div>
+							<div class="linedDelimiter"></div>
+							<div>
+								<p><a href="" class="text1Blue underline bold">Сертификат для Nokia</a></p>
+								<p class="text1Gray">(выдача сертификатов для нокии, чтоб подписывать приложения)</p>
+							</div>
+						</aside>
+					</div>
+					<div id="leftInfo">
+						<div class="titleHeader text3Blue bold left">НОВОСТИ</div>
+						<div class="titleLine"></div>
+						<br>
+						<article>
+							<h3 class="text3Gray middleMarginBottom">Скажи мне, как звонит твой телефон!</h3>
+							<span class="dateBlock text1White italic">27 апреля 2011</span>
+							&nbsp;&nbsp;
+							<a href="" class="text1Blue underline italic">Мобильные новости</a>
+							<br><br>
+							<img src="img/content_photo.jpg" alt="" title="" width="100%">
+							<p class="text1Gray articleTextBlock">Это реальный случай. А вы когда-нибудь задумывались о том, какую роль в нашей повседневной жизни играют мелодии для мобильного телефона? Ведь они давно перестали быть просто сигналами звонка или входящего сообщения. Мы скачиваем их из Интернета, делимся со знакомыми, а иногда даже пытаемся писать сами… Доходит до того, что при выборе модели самого телефона покупатели всё чаще интересуются тем, какое качество звука получается при воспроизведении разных мелодий.</p>
+							<p class="left"><a href="" class="text1Blue italic underline">Подробнее...</a></p>
+							<p class="right"><a href="" class="text1Blue italic underline">Комментариев (6)</a></p>
+							<div class="clear"></div>
+						</article>
+						<div class="linedDelimiter"></div>
+						<article>
+							<h3 class="text3Gray middleMarginBottom">Тема для Sony Ericsson 176x220 - Apple</h3>
+							<span class="dateBlock text1White italic">27 апреля 2011</span>
+							&nbsp;&nbsp;
+							<a href="" class="text1Blue underline italic">Мобильные новости</a>
+							<br><br>
+							<img src="img/content_apple.jpg" alt="" title="" width="100%">
+							<p class="text1Gray articleTextBlock">Это реальный случай. А вы когда-нибудь задумывались о том, какую роль в нашей повседневной жизни играют мелодии для мобильного телефона? Ведь они давно перестали быть просто сигналами звонка или входящего сообщения. Мы скачиваем их из Интернета, делимся со знакомыми, а иногда даже пытаемся писать сами… Доходит до того, что при выборе модели самого телефона покупатели всё чаще интересуются тем, какое качество звука получается при воспроизведении разных мелодий.</p>
+							<p class="left"><a href="" class="text1Blue italic underline">Подробнее...</a></p>
+							<p class="right"><a href="" class="text1Blue italic underline">Комментариев (6)</a></p>
+							<div class="clear"></div>
+						</article>					
+						<div class="linedDelimiter"></div>
+						<div class="pagerCenter">
+							<form id="pager" action="pager.php" method="post">
+								<img src="img/content_pager_back.png">
+								<input type="submit" name="lnk1" value="1" class="text1Blue underline bold">
+								<input type="submit" name="lnk2" value="2" class="text1Blue underline bold">
+								<input type="submit" name="lnk3" value="3" class="text1Blue underline bold">
+								<input type="submit" name="lnk4" value="4" class="text1Blue underline bold">
+								<input type="submit" name="lnk5" value="5" class="text1Blue underline bold">
+								<input type="submit" name="lnk6" value="6" class="text1Blue underline bold">
+								<input type="submit" name="lnk7" value="7" class="text1Blue underline bold">
+								<input type="submit" name="lnk8" value="8" class="text1Blue underline bold">
+								<input type="submit" name="lnk9" value="9" class="text1Blue underline bold">
+								<input type="submit" name="lnk10" value="10" class="text1Blue underline bold">
+								<input type="submit" name="lnkNext" value="..." class="text1Blue underline bold">
+								<input type="submit" name="lnkLast" value="79" class="text1Blue underline bold">
+								<img src="img/content_pager_next.png">
+							</form>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>					
+			<div id="rightContentBlock">
+				<div id="rightContent">
+					<div id="rightShadow"></div>
+					<br>
+					<div class="rightTitle text3White">РЕКЛАМА НА САЙТЕ</div>
+					<img src="img/right_mobile.jpg" title="" alt="" width="100%">
+					<br><br>
+					<div class="rightTitle text3White">ПОСЛЕДНИЕ НОВОСТИ О МОБИЛКАХ</div>
+					<a href="" class="newsBlock">
+						<h3 class="text1LightBlue underline">Samsung D900i (Вчера, 20:38)</h3>
+						<p class="text1White"></p>
+					</a>
+					<a href="" class="newsBlock">
+						<h3 class="text1LightBlue underline">Nokia C5-03 (Вчера, 16:14)</h3>
+						<p class="text1White">Проблеми з звязком означає що ти живеш на хуторі.По-друге хай твоя жена ним не кидає чи сідає через ...</p>
+					</a>
+					<a href="" class="newsBlock">
+						<h3 class="text1LightBlue underline">Nokia 5250 (27 апреля 2011 19:24)</h3>
+						<p class="text1White">телефон чувствительный а если правильно нафаршить то вобще блес !!!!</p>
+					</a>
+					<a href="" class="newsBlock">
+						<h3 class="text1LightBlue underline">Samsung C3300K Champ (26 апреля 2011 18:18)</h3>
+						<p class="text1White">была программа jar все работало .скачала новую аську перестало все работать.сделала п.о в ремонте ...</p>
+					</a>
+					<a href="" class="newsBlock">
+						<h3 class="text1LightBlue underline">Sony Ericsson Z770i (23 апреля 2011 17:09)</h3>
+						<p class="text1White">суперский телефон со своими характеристиками, конечно далеко от планшетников, но плюсов в нём ...</p>
+					</a>
+				</div>
+				<div id="rightBottomCorner"></div>
+				<div id="rightBottomUpCorner"></div>
+				<div id="topCorner"></div>
+				<div id="bottomCorner"></div>
+			</div>
+		</div>
+		<br><br>
+		<div id="footer">
+			<div class="hr"></div>
+			<div id="centerFooter" class="centerBlock">
+				<div id="blueCornerRight"></div>
+				<div id="greenCornerRight"></div>
+				<div id="blueOverCornerLeft"></div>
+				<div id="greenOverCornerLeft"></div>
+				<div id="tableFooter">
+					<table id="centerTable">
+						<tr>
+							<td id="leftFooter">
+								<p class="right text4LightGray bold">РЕКЛАМА НА САЙТЕ</p>
+								<br><br>
+								<img class="right" src="img/footer_photo.jpg" title="" alt="">
+							</td>
+							
+							<td id="rightFooter">
+								<img src="img/logo.png" width="200px" title="" alt="">
+								<br>
+								<p class="text1Gray bold">1986-2011 &copy; Прокачай мобильничеГ Java игры, темы для Nokia, мел</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="footerBackgd"></div>
+		</div>
+	</body>
+</html>

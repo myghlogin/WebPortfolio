@@ -1,0 +1,357 @@
+body, p, ul, li, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2, h3{
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2{
+    color: rgb(121, 118, 106);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+h3{
+    color: rgb(225, 130, 11);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.gradientBlock{
+    position: relative;
+    display: block;
+    padding: 2px;
+    border: 1px solid rgb(228, 227, 218);
+    border-radius: 2px;
+    background-image: -moz-linear-gradient(top, rgb(239, 239, 239) 0%, rgb(253, 253, 253) 100%);
+    line-height: 0px;
+}
+
+.shadow{
+    box-shadow: 0 0 16px 1px #000;
+    height: 10px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 0 0 40% 40%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.shadowContainer{
+    position: relative;
+    display: inline-block;
+}
+
+.cmpButton, .cmpButton:hover, .cmpButton:visited, .cmpButton:active{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0 5px 40px;
+}
+
+.cmpMoreButton{
+    display: inline-block;
+    text-decoration: none;
+    background: url("../img/more-button.png") left top;
+    width: 60px;
+    height: 25px;
+}
+
+.cmpMoreButton:hover{
+    background: url("../img/more-button.png") left -25px;
+}
+
+.cmpComboBox{
+    background: url("../img/dropdown.png") no-repeat left top;
+    width: 209px;
+    height: 28px;
+}
+
+.cmpSearchInput{
+    display: inline-block;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(249, 247, 232);
+    color: rgb(184, 178, 169);
+    padding: 3px 25px 3px 3px;
+}
+    .cmpSearchInput > input[type="text"],
+    .cmpSearchInput > input[type="submit"]{
+        border: 0px;
+        background: transparent;
+    }
+
+    .cmpSearchInput > input[type="submit"]{
+        background: url("../img/go-button.png") left top no-repeat;
+        width: 49px;
+        height: 50px;
+        position: absolute;
+        right: -25px;
+        top: -12px;
+    }
+
+    .cmpSearchInput > input[type="submit"]:hover{
+        background-position: left -49px;
+    }
+
+.cmpInfoColumn{
+    float: left;
+    width: 307px;
+    margin-right: 25px;
+}
+.cmpInfoColumn:last-child{
+    margin-right: 0px;
+}
+    .cmpInfoColumn > div:first-child{
+        margin-bottom: 25px;
+    }
+        .cmpInfoColumn hr{
+            border: 1px solid rgb(121, 118, 106);
+            margin: 3px 0px 10px 0px;
+        }
+
+        .cmpInfoColumn p{
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+            color: rgb(102, 93, 78);
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+.cmpFooterMenu{
+    float: left;
+    background: url("../img/footer-separator.png") no-repeat right top;
+    height: 200px;
+    width: 220px;
+    padding-left: 30px;
+}
+
+.cmpFooterMenu:last-child{
+    background: none;
+}
+
+    .cmpFooterMenu h4{
+        margin-bottom: 10px;
+        color: rgb(249, 247, 232);
+        font-weight: bold;
+        font-family: Arial, Tahoma, Verdana, sans-serif;
+        font-size: 16px;
+    }
+
+    .cmpFooterMenu li > a{
+        color: rgb(184, 182, 170);
+        font-family: Arial, Tahoma, Verdana, sans-serif;
+        font-size: 16px;
+    }
+
+    .cmpFooterMenu li > a:hover{
+        text-decoration: underline;
+    }
+
+#topPanel{
+    background: url("../img/bg.png") repeat-x left bottom;
+    background-color: rgb(28, 27, 27);
+    box-shadow: 0px 0px 5px 0px #000;
+    padding-bottom: 5px;
+}
+    #topLogo{
+        background: url("../img/logo.png") left top no-repeat;
+        width: 300px;
+        height: 50px;
+        float: left;
+    }
+
+    #purchaseButton, #removeFrameButton, #comboBox{
+        float: right;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    #purchaseButton{
+        background: url("../img/trolley.png") no-repeat left center;
+        margin-left: 50px;
+    }
+
+    #removeFrameButton{
+        background: url("../img/cross.png") no-repeat left center;
+    }
+
+    #comboBox{
+        margin-top: 10px;
+    }
+
+#content{
+    background: url("../img/bg.gif") repeat-x left top;
+    background-color: rgb(249, 247, 232);
+}
+    #topContainer{
+        position: relative;
+        height: 210px;
+    }
+
+    #content > div.center{
+        background: url("../img/top-bg.png") no-repeat right top;
+    }
+
+    #searchInput{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    #logo{
+        background: url("../img/logo2.png") no-repeat left top;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        width: 378px;
+        height: 71px;
+    }
+
+    #menu{
+        position: absolute;
+        right: 0px;
+        top: 95px;
+    }
+        #menu a{
+            text-transform: uppercase;
+            color: rgb(121, 118, 106);
+            font-weight: bold;
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+            font-size: 15px;
+            font-stretch: ultra-condensed;
+            display: block;
+        }
+
+        #menu a:hover{
+            color: rgb(225, 130, 11);
+        }
+
+        #menu > ul > li{
+            float: left;
+            position: relative;
+        }
+            #menu > ul > li > a{
+                padding: 0px 10px;
+                border-right: 1px solid rgb(121, 118, 106);
+            }
+
+            #menu > ul > li:last-child > a{
+                border-right: 0px;
+                padding-right: 0px;
+            }
+
+            #menu > ul > li:hover > ul{
+                display: block;
+            }
+
+            #menu > ul ul{
+                display: none;
+                position: absolute;
+                z-index: 1;
+                top: 18px;
+                background-color: #fff;
+                border: 1px solid rgb(121, 118, 106);
+                padding: 0px 5px;
+                white-space: nowrap;
+            }
+                #menu > ul ul > li{
+                    padding: 8px 10px;
+                    border-bottom: 1px solid rgb(121, 118, 106);
+                }
+
+                #menu > ul ul > li:last-child{
+                    border-bottom: 0px;
+                }
+    #slider{
+        margin-bottom: 25px;
+    }
+        #carousel a[data-slide="prev"],
+        #carousel a[data-slide="next"]{
+            top: 145px;
+        }
+
+        #carousel a[data-slide="prev"]{
+            background: url("../img/prev-slide.png");
+            width: 36px;
+            height: 43px;
+        }
+
+        #carousel a[data-slide="next"]{
+            background: url("../img/next-slide.png");
+            width: 36px;
+            height: 43px;
+        }
+
+footer{
+    margin-top: 100px;
+    background: url("../img/footer-bg.png") repeat-x left top;
+    background-color: rgb(119, 114, 100);
+}
+
+    footer > div.center{
+        background: url("../img/bottom-bg.png") no-repeat center bottom;
+        position: relative;
+    }
+
+        #followUs{
+            background: url("../img/follow-bg.png") no-repeat left top;
+            width: 244px;
+            height: 56px;
+            color: rgb(102, 93, 78);
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            position: absolute;
+            left: 350px;
+            top: -13px;
+        }
+
+            #followUs > div{
+                position: absolute;
+                left: 9px;
+                top: 10px;
+
+            }
+
+        #footerMenu{
+            padding-top: 80px;
+        }
+
+        #buy{
+            text-align: center;
+            padding-bottom: 10px;
+            color: rgb(184, 182, 170);
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+            font-size: 16px;
+        }
+
+            #buy > span{
+                color: rgb(249, 247, 232);
+            }
+

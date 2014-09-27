@@ -1,0 +1,597 @@
+/*Common elements*/
+
+body{
+    background: url("../img/bg.jpg") repeat-x left top;
+    background-color: #e4e4e4;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul, ol{
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:active, a:visited{
+  text-decoration: none;
+}
+
+ul, ul{
+  list-style: none;
+}
+
+.clear{
+  clear: both;
+  display: block;
+}
+.thickBorder{
+  border-top: 3px solid #e1e1e1;
+}
+h1{
+  color: #c4c5c7;
+  font: 35px Arial, Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+h2{
+  color: #000;
+  font: 22px Arial, Tahoma, Verdana, sans-serif;
+  margin-bottom: 12px;
+}
+
+h3{
+  color: #3f4342;
+  font: 20px Arial, Tahoma, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+h4{
+  color: #787c7b;
+  font: 16px Arial, Tahoma, Verdana, sans-serif;
+  margin-bottom: 8px;
+}
+
+h5{
+  color: #777978;
+  font: 15px Arial, Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p, a, span, div{
+  color: #737373;
+  font: 12px Arial, Tahoma, Verdana, sans-serif;
+}
+
+.blueText{
+  color: #2c7b9c;
+}
+
+.orangeText{
+  color: #ff8800;
+}
+
+.grayText{
+  color: #939393;
+}
+
+.lightGrayText{
+  color: #5a5f62;
+}
+
+.lightGrayText{
+  color: #afafaf;
+}
+.subtext{
+  font-size: 10px;
+}
+
+#content, #bottomPanel{
+    background: url("../img/box_bg.jpg") repeat-x left bottom;
+    background-color: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    width: 950px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+#bottomPanel{
+    border-radius: 10px 10px 20% 20%;
+}
+
+#header{
+    background: url("../img/header_bg.jpg") repeat-x left top;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    position: relative;
+    height: 67px;
+}
+    #header > #logo{
+        background: url("../img/logo.png") no-repeat left top;
+        width: 218px;
+        height: 45px;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+    }
+
+    #header > div.cmpSearchInput{
+        position: absolute;
+        right: 30px;
+        top: 22px;
+    }
+
+#menu{
+  background-color: #3b4745;
+  padding-left: 15px;
+}
+  #menu > ul > li{
+    float: left;
+    position: relative;
+    border-right: 1px solid #5a5f62;
+  }
+  #menu > ul > li:first-child{
+    border-left: 1px solid #5a5f62
+  }
+    #menu > ul > li > a{
+      display: inline-block;
+      position: relative;
+      padding: 8px 20px;
+      color: #d7dbdc;
+      font: 14px Arial, Tahoma, Verdana, sans-serif;
+    }
+    #menu > ul > li > div.selectedMenuItem + a:after{
+      display: inline-block;
+      content: "";
+      background: url("../img/submenu_icon.png") no-repeat left top;
+      width: 10px;
+      height: 12px;
+      position: relative;
+      left: 5px;
+      top: 1px;
+    }
+    #menu > ul > li > a,
+    #menu > ul > li > div.selectedMenuItem + a:after{
+      z-index: 22;
+    }
+    #menu > ul > li:hover > div.selectedMenuItem + a:after{
+      background: url("../img/submenu_hover_icon.png") no-repeat left top;
+    }
+    #menu div.selectedMenuItem{
+      display: none;
+      background-color: #fff;
+      border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      -webkit-border-radius: 5px 5px 0 0;
+      position: absolute;
+      z-index: 21;
+      left: 0px;
+      bottom: 0px;
+      width: 84%;
+      height: 90%;
+      margin: 0 8% 0 8%;
+
+    }
+    #menu > ul > li[selected]{
+      background-color: #5a5f62;
+    }
+      #menu > ul > li[selected] > a{
+        color: #fff;
+      }
+    #menu > ul ul{
+      display: none;
+      position: absolute;
+      left: 8%;
+      top: 32px;
+      border-radius: 0 0 5px 5px;
+      -moz-border-radius: 0 0 5px 5px;
+      -webkit-border-radius: 0 0 5px 5px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      padding: 0 10px;
+      z-index: 20;
+    }
+    #menu > ul ul > li{
+      padding: 5px 65px 5px 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    #menu > ul ul > li:last-child{
+      border-bottom: 0px;
+    }
+      #menu > ul ul > li > a{
+        color: #414342;
+        font: 10px Arial, Tahoma, Verdana, sans-serif;
+      }
+    #menu > ul > li:hover > ul,
+    #menu > ul > li:hover > div.selectedMenuItem{
+      display: block;
+    }
+
+    #menu > ul > li:hover > div.selectedMenuItem + a{
+      color: #3b4745;
+    }
+
+#bottomPanel{
+  margin-bottom: 30px;
+  padding: 10px 0px 20px 0px;
+}
+  #bottomPanel > div:not(.clear){
+    float: left;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 81px;
+    margin-right: 20px;
+  }
+  #bottomPanel > div:not(.clear):last-of-type{
+    border-right: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  #bottomPanel #hotLinks{
+    margin-left: 20px;
+  }
+    #bottomPanel #hotLinks > div > div{
+      float: left;
+      margin-right: 70px;
+    }
+    #bottomPanel #hotLinks > div > div:last-child{
+      margin-right: 0px;
+    }
+  #bottomPanel #feeds > ul{
+    list-style-position: inside;
+    list-style-image: url("../img/feeds_icon.png");
+  }
+
+footer{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*home page*/
+
+#slider{
+  background: url("../img/slider_bg.png") no-repeat left top;
+  background-size: 100%;
+  height: 349px;
+}
+  #slider > div{
+    position: relative;
+    height: inherit;
+  }
+    #slider > div > #slide1Image{
+      background: url("../img/slide1_image.png") no-repeat left top;
+      width: 549px;
+      height: 288px;
+      position: absolute;
+      left: 40px;
+      top: 32px;
+    }
+    #slider > div > div.layoutProjectItem{
+      width: 275px;
+      position: absolute;
+      right: 50px;
+      top: 90px;
+    }
+    #slider > div > div.cmpPointPager{
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+    }
+
+#services{
+  margin: 12px 10px 15px 10px;
+}
+  #services > div.layoutThemeItem{
+    float: left;
+    margin-right: 20px;
+  }
+  #services > div.layoutThemeItem:last-of-type{
+    margin-right: 0px;
+  }
+
+#updates{
+  float: right;
+  padding-left: 20px;
+  margin-right: 10px;
+  width: 313px;
+}
+  #updates .cmpButton{
+    margin-top: 10px;
+  }
+  #updates #months, #updates #value{
+    float: left;
+  }
+  #updates #months{
+    margin-right: 10px;
+  }
+
+#features{
+  overflow: hidden;
+  margin-left: 20px;
+  padding-right: 50px;
+  border-right: 1px solid #e2e2e2;
+}
+  #features .cmpPointPager{
+    margin-top: 15px;
+  }
+  #features + div{
+    height: 20px;
+  }
+
+/*Portfolio page*/
+
+#websites{
+  box-shadow: inset 0 0 150px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+}
+  #websites > div{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 40px 0px 30px 40px;
+    position: relative;
+  }
+
+    #websites > div > div{
+      position: absolute;
+      right: 50px;
+      top: 95px;
+      width: 260px;
+    }
+
+  #websites > span.cmpNumericPager{
+    float: right;
+    margin: 35px 30px 35px 0;
+  }
+
+/*Product page*/
+
+#projectView{
+  background: url("../img/slider_bg.png") left top no-repeat;
+  background-size: 100% 349px;
+  height: 349px;
+  position: relative;
+}
+  #projectView > #projectImage{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+  }
+  #projectView > div.layoutProjectItem{
+    position: absolute;
+    right: 120px;
+    top: 100px;
+    width: 170px;
+  }
+  #productContent{
+    padding: 30px 30px 10px 30px;
+  }
+    #productLeft{
+      overflow: hidden;
+      padding: 0px 10px 30px 0px;
+      border-right: 1px solid #e2e3e3;
+    }
+      #productLeft img{
+        margin-top: 15px;
+      }
+      #projectDescriptor p{
+        margin-bottom: 25px;
+      }
+      #projectDescriptor p + h5{
+        display: inline-block;
+        margin-right: 10px;
+      }
+    #productRight{
+      width: 300px;
+      float: right;
+    }
+      #productRight #productInfo,
+      #productRight #message{
+        padding-left: 20px;
+      }
+      #productRight #productInfo{
+        border-bottom: 1px solid #e2e3e3;
+        padding-bottom: 20px;
+      }
+      #productRight #message{
+        padding-top: 20px;
+      }
+        #productRight #message div.cmpInfoBlock{
+          width: 100%;
+        }
+      #productRight #productInfo > div{
+        float: left;
+        padding-top: 10px;
+      }
+      #productRight #productInfo > div:first-of-type{
+        margin-right: 25px;
+      }
+        #productRight #productInfo > div:first-of-type > div{
+          color: #55585d;
+          font-weight: bold;
+        }
+        #productRight #productInfo > div > div{
+          margin-bottom: 20px;
+        }
+
+
+/*About page*/
+
+#aboutContent{
+  position: relative;
+  padding: 20px 20px 30px 20px;
+}
+  #aboutLeft{
+    overflow: hidden;
+    border-right: 1px solid #e1e3e2;
+    padding-right: 25px;
+  }
+    #aboutLeft div.cmpMessageBlock{
+      margin-bottom: 20px;
+    }
+    #aboutLeft > div:first-child p{
+      margin-bottom: 10px;
+    }
+    #aboutLeft #floatBlock{
+      float: left;
+      margin: 0px 10px 0px 0px;
+      background: #ffa500;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      width: 150px;
+    }
+    #aboutLeft #majorServices{
+      margin: 30px 0px;
+    }
+      #aboutLeft #majorServices > div.layoutThemeItem{
+        float: left;
+        margin-right: 20px;
+      }
+      #aboutLeft #majorServices > div.layoutThemeItem:last-of-type{
+        margin-right: 0px;
+      }
+    #aboutLeft #majorServices + div{
+      padding-left: 20px;
+    }
+    #aboutLeft #persons > p{
+      margin-bottom: 25px;
+    }
+    #aboutLeft #clients > h5{
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+      #aboutLeft #clients #majorClients > div.thickBorder{
+        margin: 10px 0px;
+      }
+        #aboutLeft #clients #majorClients > div > div{
+          width: 143px;
+          border-right: 1px solid #e1e1e1;
+          float: left;
+          text-align: center;
+          min-height: 75px;
+        }
+        #aboutLeft #clients #majorClients > div >div:last-child{
+          border-right: 0px;
+        }
+  #aboutRightMenu{
+    float: right;
+    width: 260px;
+  }
+    #aboutRightMenu > div{
+      padding: 10px 10px 10px 0px;
+      background: #f0f2f1;
+      border-radius: 0px 5px 5px 0px;
+      -moz-border-radius: 0px 5px 5px 0px;
+      -webkit-border-radius: 0px 5px 5px 0px;
+    }
+      #aboutRightMenu > div > ul:after{
+        content: "";
+        display: block;
+        position: relative;
+        background: url("../img/right_menu_bg.png") left top no-repeat;
+        height: 2px;
+        width: 253px;
+      }
+        #aboutRightMenu > div > ul > li{
+          padding: 10px 10px 10px 20px;
+          background: url("../img/right_menu_bg.png") left top no-repeat;
+          border-radius: 0px 5px 5px 0px;
+          -moz-border-radius: 0px 5px 5px 0px;
+          -webkit-border-radius: 0px 5px 5px 0px;
+          text-transform: uppercase;
+          color: #3f4344;
+          cursor: pointer;
+        }
+        #aboutRightMenu > div > ul > li[selected]{
+          background-color: #fff;
+          color: #fcab28;
+          font-weight: bold;
+          cursor: default;
+        }
+  #aboutMessage{
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+  }
+    #aboutMessage > div.cmpPointPager{
+      margin-bottom: 10px;
+    }
+    #aboutMessage > h5{
+      display: inline;
+      margin-right: 15px;
+    }
+    #aboutMessage > div.cmpInfoBlock{
+      display: block;
+    }
+
+
+
+/*Other pages*/
+
+#pageName{
+  background: #5a5f62;
+  padding: 20px 0px 15px 30px;
+  position: relative;
+}
+  #pageName div.cmpNumericPager{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+  }
+
+/* Layouts */
+
+.layoutProjectItem p{
+  margin-bottom: 15px;
+}
+
+.layoutThemeItem{
+  width: 260px;
+  border-right: 1px solid #e2e2e2;
+  padding-right: 20px;
+}
+.layoutThemeItem:last-of-type{
+  border-right: 0px;
+}
+  .layoutThemeItem > div > img{
+    float: left;
+    margin-right: 10px;
+  }
+  .layoutThemeItem > div > div{
+    overflow: hidden;
+  }
+  .layoutThemeItem > div > div > p{
+    margin-bottom: 10px;
+  }
+
+.layoutPerson{
+  background: url("../img/person_photo.png") left top no-repeat;
+  padding: 10px 0px 35px 195px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 20px;
+}
+.layoutPerson:last-of-type{
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+  .layoutPerson [goal="name"]{
+    color: #767877;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .layoutPerson [goal="post"]{
+    color: #000;
+  }
+  .layoutPerson [goal="post"],
+  .layoutPerson [goal="description"]{
+    margin-bottom: 15px;
+  }
+  .layoutPerson .cmpLinkButton:not(:last-of-type){
+    margin-right: 5px;
+  }

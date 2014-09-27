@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watercolor</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="lib/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var params = {trigger: "hover", placement: "top"};
+            $('#twitter').tooltip(params);
+            $('#facebook').tooltip(params);
+            $('#forrst').tooltip(params);
+            $('#dribble').tooltip(params);
+            $('#digg').tooltip(params);
+            $('#cargo').tooltip(params);
+            $('#delicious').tooltip(params);
+        });
+    </script>
+</head>
+<body>
+    <div id="topPanel">
+        <div class="center">
+            <div id="topLogo"></div>
+            <a href="#" class="cmpButton" id="removeFrameButton">Remove frame</a>
+            <a href="#" class="cmpButton" id="purchaseButton">Purchase</a>
+            <div class="cmpComboBox" id="comboBox"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="center">
+            <br>
+            <div id="topContainer">
+                <div class="cmpSearchInput" id="searchInput">
+                    <input type="text" placeholder="Search...">
+                    <input type="submit" value="">
+                </div>
+                <div id="logo"></div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#">Features</a>
+                            <ul>
+                                <li><a href="#">Appearance</a></li>
+                                <li><a href="#">Styled elements</a></li>
+                                <li><a href="#">Multiple columns</a></li>
+                                <li><a href="#">Accordion boxes</a></li>
+                                <li><a href="#">Tooltips</a></li>
+                                <li><a href="#">Tabs</a></li>
+                                <li><a href="#">Icons</a></li>
+                                <li><a href="#">Video shortcodes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li>
+                            <a href="#">Gallery</a>
+                            <ul>
+                                <li><a href="#">Image gallery</a></li>
+                                <li><a href="#">Video gallery</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Powerful andim</a>
+                            <ul>
+                                <li><a href="#">Generic settings</a></li>
+                                <li><a href="#">Appearance settings</a></li>
+                                <li><a href="#">Front page settings</a></li>
+                                <li><a href="#">Slideshow settings</a></li>
+                                <li><a href="#">Social settings</a></li>
+                                <li><a href="#">Blog settings</a></li>
+                                <li><a href="#">Gallery settings</a></li>
+                                <li><a href="#">Contact settings</a></li>
+                                <li><a href="#">Widget ready</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div id="slider" class="shadowContainer">
+                <div class="shadow"></div>
+                <div class="gradientBlock">
+                    <div id="carousel" class="carousel slide">
+                        <!— Carousel items —>
+                        <div class="carousel-inner">
+                            <div class="active item"><img src="img/imgbig1.jpg" alt="Imgage1"></div>
+                            <div class="item"><img src="img/imgbig2.jpg" alt="Imgage2"></div>
+                            <div class="item"><img src="img/imgbig3.jpg" alt="Imgage3"></div>
+                        </div>
+                        <!— Carousel nav —>
+                        <a class="carousel-control left" href="#carousel" data-slide="prev"></a>
+                        <a class="carousel-control right" href="#carousel" data-slide="next"></a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="centerText">Four different skins: spring, summer, autumn and winter</h2>
+            <br>
+            <div>
+                <div class="cmpInfoColumn">
+                    <div class="shadowContainer">
+                        <div class="shadow"></div>
+                        <a href="#" class="gradientBlock">
+                            <img src="img/img1.jpg" width="300px">
+                        </a>
+                    </div>
+                    <h2>Powerful admin panel</h2>
+                    <h3>Web pages</h3>
+                    <hr>
+                    <p>Watercolor theme comes with a built-in powerful admin panel designed to configure all of the options of the site. </p>
+                    <a href="#" class="cmpMoreButton"></a>
+                </div>
+                <div class="cmpInfoColumn">
+                    <div class="shadowContainer">
+                        <div class="shadow"></div>
+                        <a href="#" class="gradientBlock">
+                            <img src="img/img2.jpg" width="300px">
+                        </a>
+                    </div>
+                    <h2>Appearance</h2>
+                    <h3>Writing</h3>
+                    <hr>
+                    <p>Customize the appearance of your theme from the 4 predefined skins: Spring, summer, autumn and winter. </p>
+                    <a href="#" class="cmpMoreButton"></a>
+                </div>
+                <div class="cmpInfoColumn">
+                    <div class="shadowContainer">
+                        <div class="shadow"></div>
+                        <a href="#" class="gradientBlock">
+                            <img src="img/img3.jpg" width="300px">
+                        </a>
+                    </div>
+                    <h2>6 pages layouts</h2>
+                    <h3>Painting</h3>
+                    <hr>
+                    <p>All you need for a complete website. Home page, contact page, image gallery page, video gallery page, regular page and blog and single page. </p>
+                    <a href="#" class="cmpMoreButton"></a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <footer>
+            <div class="center">
+                <div id="followUs">
+                    <div>
+                        Follow Us&nbsp;&nbsp;
+                        <a href="#" id="twitter" title="Twitter"><img src="img/twitter.png"></a>
+                        <a href="#" id="facebook" title="Facebook"><img src="img/facebook.png"></a>
+                        <a href="#" id="forrst" title="Forrst"><img src="img/forrst.png"></a>
+                        <a href="#" id="dribble" title="Dribble"><img src="img/dribbble.png"></a>
+                        <a href="#" id="digg" title="Digg"><img src="img/digg.png"></a>
+                        <a href="#" id="cargo" title="Cargo"><img src="img/cargo.png"></a>
+                        <a href="#" id="delicious" title="Delicious"><img src="img/delicious.png"></a>
+                    </div>
+                </div>
+                <div id="footerMenu">
+                    <div class="cmpFooterMenu">
+                        <h4>Skins</h4>
+                        <ul>
+                            <li><a href="#">Spring</a></li>
+                            <li><a href="#">Summer</a></li>
+                            <li><a href="#">Autumn</a></li>
+                            <li><a href="#">Winter</a></li>
+                        </ul>
+                    </div>
+                    <div class="cmpFooterMenu">
+                        <h4>Archives</h4>
+                        <ul>
+                            <li><a href="#">August 2010</a></li>
+                        </ul>
+                    </div>
+                    <div class="cmpFooterMenu">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Painting</a></li>
+                            <li><a href="#">Uncategorized</a></li>
+                            <li><a href="#">Web pages</a></li>
+                            <li><a href="#">Writing</a></li>
+                        </ul>
+                    </div>
+                    <div class="cmpFooterMenu">
+                        <h4>Recent posts</h4>
+                        <ul>
+                            <li><a href="#">Powerful admin panel</a></li>
+                            <li><a href="#">Painting</a></li>
+                            <li><a href="#">6 page layouts</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum dolor</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="buy">Buy this theme at <span>themeforest</span></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

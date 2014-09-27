@@ -1,0 +1,384 @@
+body, ol, ul, p, h3, h2
+{
+	margin: 0;
+	padding: 0;
+}
+
+nav, div, header, section, footer
+{
+	border: 0px;
+	display: block;
+}
+
+nav
+{
+	margin: 0 auto;
+	width: 995px;
+	height: 80px;
+	position: relative;
+}
+
+ol, ul 
+{
+	list-style: none;
+}
+
+a, a:hover
+{
+	text-decoration: none;
+}
+
+#logo, #menu
+{
+	top: 20px;
+}
+
+#logo
+{
+	position: absolute;
+	left: 0px;
+}
+
+#logo img, #logo p
+{
+	float: left;
+}
+
+#logo p
+{
+	padding: 0px 10px;
+	font: 38px "Myriad Pro";
+	color: #404040;
+}
+
+#menu
+{
+	position: absolute;
+	right: 0px;
+}
+
+#menu li
+{
+	float: left;
+	width: 130px;
+	text-align: center;
+}
+
+#menu a
+{
+	display: block;
+	padding: 15px 10px;
+	background: center no-repeat;
+	font: 18px "Myriad Pro";
+	color: #767676;
+	transition: color 0.5s, background 0.5s;
+}
+
+#menu a:hover
+{
+	display: block;
+	background: url(../img/menu_item_backgd.png) center no-repeat;
+	color: black;
+}
+
+header
+{
+	height: 680px;
+	position: relative;
+}
+
+#headerBackgd
+{
+	background: url(../img/header_backgd.png) center no-repeat;
+	height: 580px;
+	width: 100%;
+	position: absolute;
+	top: 100px;
+}
+
+#headerContainer
+{
+	margin: 0 auto;
+	width: 1050px;
+	height: 700px;
+	position: relative;
+	background: url(../img/header_envelope_backgd.png) top center no-repeat;
+}
+
+#headerMainImg
+{
+	background: url(../img/header_main_img.jpg) left top no-repeat;
+	position: absolute;
+	width: 995px;
+	height: 523px;
+	left: 20px;
+	top: 29px;
+}
+
+#envelopeTopOver
+{
+	background: url(../img/header_envelope_top_over.png) left top no-repeat;
+	position: absolute;
+	width: 73px;
+	height: 62px;
+	right: 68px;
+	top: 0px;
+
+}
+
+#envelopeBottomOver
+{
+	background: url(../img/header_envelope_bottom_over.png) left top no-repeat;
+	position: absolute;
+	width: 272px;
+	height: 92px;
+	right: 69px;
+	top: 500px;
+}
+
+#headerApple
+{
+	background: url(../img/header_apple.png) left top no-repeat;
+	position: absolute;
+	width: 353px;
+	height: 391px;
+	left: 107px;
+	top: 230px;
+
+}
+
+#caption
+{
+	position: absolute;
+	width: 480px;
+	left: 470px;
+	top: 335px;
+}
+
+#mainContainer
+{
+	margin: 0 auto;
+	position: relative;
+	top: -70px;
+}
+
+.centerElement
+{
+	margin: 0 auto;
+	width: 950px;
+}
+
+h2, h3
+{
+	color: #3f3f3f;
+	padding-bottom: 20px;
+}
+
+h2
+{
+	font: 36px "Myriad Pro";
+}
+
+h3
+{
+	font: 25px "Myriad Pro";
+}
+
+.text, .textSmall, .textHeader
+{
+	line-height: 1.5;
+}
+
+.text
+{
+	font: 13pt Tahoma;
+	color: #4b4b4b;
+}
+
+.textSmall
+{
+	font: 12pt Tahoma;
+	color: #4b4b4b;
+}
+
+.textHeader
+{
+	font: 10pt Tahoma;
+	color: white;
+}
+
+.white
+{
+	color: white;
+}
+
+.propertyBlock
+{
+	padding: 0px 5px;
+	width: 300px;
+}
+
+.left
+{
+	float: left;
+}
+.hidden
+{
+	overflow: hidden;
+}
+
+#products > div > img 
+{
+	float: left;
+}
+
+#products > div > div
+{
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+#products > div > div > a
+{
+	display: block;
+	width: 109px;
+	height: 24px;
+	background: url(../img/content_btn_backgd.png) center no-repeat;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#sale
+{
+	border-top: 1px solid #d6d6d6;
+	background: #f8f8f8;
+	height: 146px;
+	padding: 15px 0px;
+}
+
+#sale > div
+{
+	position: relative;
+}
+
+#saleSymbol, #saleSimpleSymbol, #saleText
+{
+	position: absolute;
+}
+
+#saleSymbol
+{
+	background: url(../img/sale_figures.png) no-repeat left top;
+	left: 0px;
+	top: 15px;
+	width: 138px;
+	height: 116px;
+}
+
+#saleSimpleSymbol
+{
+	background: url(../img/sale_small_figures.png) no-repeat left top;
+	right: 15px;
+	top: 0px;
+	width: 41px;
+	height: 29px;
+}
+
+#saleText
+{
+	left: 150px;
+	top: 15px;
+	width: 80%;
+}
+
+p a
+{
+	color: #5f93a2;
+}
+
+footer
+{
+	padding-top: 40px;
+}
+
+#rightFooter
+{
+	float: right;
+	width: 280px;
+	position: relative;
+}
+
+#leftFooter
+{
+	overflow: hidden;
+}
+
+#leftFooter img
+{
+	float: left;
+	margin-right: 5px;
+}
+
+.footerCopyRight, .footerCopyRightSub
+{
+	color: #6c6c6c;
+}
+
+.footerCopyRight
+{
+	font: 13px Tahoma;
+	padding-top: 8px;
+}
+
+.footerCopyRightSub
+{
+	font:  bold 10px Tahoma;
+	padding-top: 2px;
+}	
+
+.consultation, .telephoneNumber
+{
+	color: #404040;
+}
+
+.consultation
+{
+	font: 14px "Myriad Pro";
+}
+
+.telephoneNumber
+{
+	font: 26px "Myriad Pro";
+}
+
+#vk, #facebook
+{
+	position: absolute;
+	display: block;
+}
+
+#vk
+{
+	background: url(../img/footer_vk.png) no-repeat left top;
+	right: 0px;
+	top: 15px;
+	width: 34px;
+	height: 34px;
+}
+
+#facebook
+{
+	background: url(../img/footer_facebook.png) no-repeat left top;
+	right: 30px;
+	top: -10px;
+	width: 47px;
+	height: 47px;
+}

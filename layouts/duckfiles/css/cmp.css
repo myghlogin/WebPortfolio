@@ -1,0 +1,267 @@
+.cmpButton{
+  display: inline-block;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 2px 5px;
+  color: #fff;
+  font: 12px Arial, Tahoma, Verdana, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+  .cmpButton[theme="orange"]{
+    background-color: #faad2b;
+  }
+  .cmpButton[theme="blue"]{
+    background-color: #5aa1c1;
+  }
+  .cmpButton[theme="green"]{
+    background-color: #b7ca4d;
+  }
+  .cmpButton[theme="gray"]{
+    background-color: #ccc;
+  }
+
+.cmpSearchInput{
+  display: inline-block;
+  position: relative;
+  background: url("../img/search_bg.png") no-repeat left top;
+  width: 140px;
+  height: 24px;
+  padding: 4px 5px 5px 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+  .cmpSearchInput > div[goal="searchButton"]{
+    background: url("../img/search_icon.png") no-repeat left top;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+  .cmpSearchInput > input{
+	-webkit-appearance: none;
+	outline: 0px;
+    border: 0px;
+    background: transparent;
+    color: #777978;
+    font: 12px Arial, Tahoma, Verdana, sans-serif;
+    width: 120px;
+  }
+
+.cmpPointPager{
+  display: inline-block;
+  line-height: 0px;
+}
+  .cmpPointPager > span{
+    display: inline-block;
+    cursor: pointer;
+  }
+  .cmpPointPager > span:not([goal]){
+    background-color: #a8aaa9;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  .cmpPointPager > span[selected]:not([goal]){
+    background-color: #3e4444;
+  }
+  .cmpPointPager > span[goal="button"]{
+    background-color: #fff;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 1px 3px;
+    color: #878787;
+    font: 10px Arial, Tahoma, Verdana, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: -1px;
+  }
+
+.cmpNumericPager{
+  display: inline-block;
+  white-space: nowrap;
+}
+  .cmpNumericPager > span{
+    font: 10px Arial, Tahoma, Verdana, sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .cmpNumericPager > span[goal="pages"]{
+    font-size: 11px;
+    margin-right: 5px;
+  }
+  .cmpNumericPager > span:not([goal="pages"]){
+    padding: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+  }
+  .cmpNumericPager > span[goal="item"]{
+    padding: 3px 5px;
+  }
+  .cmpNumericPager > span[goal="next"],
+  .cmpNumericPager > span[goal="back"]{
+    font-weight: bold;
+  }
+  .cmpNumericPager > span[goal="next"]:after{
+    content: " \00bb";
+  }
+  .cmpNumericPager > span[goal="back"]:before{
+    content: "\00ab\0020";
+  }
+
+  /*тема dark*/
+  .cmpNumericPager[theme="dark"] > span[goal="pages"]{
+    color: #a7acaf;
+  }
+  .cmpNumericPager[theme="dark"] > span:not([goal="pages"]){
+    background-color: #7c8184;
+    color: #fff;
+  }
+  .cmpNumericPager[theme="dark"] > span[selected]:not([goal="pages"]){
+    background-color: #fff;
+    color: #7c8184;
+  }
+  /*тема light*/
+  .cmpNumericPager[theme="light"] > span[goal="pages"]{
+    color: #757776;
+  }
+  .cmpNumericPager[theme="light"] > span:not([goal="pages"]){
+    background-color: #fff;
+    color: #7c8184;
+  }
+  .cmpNumericPager[theme="light"] > span[selected]:not([goal="pages"]){
+    background-color: #7c8184;
+    color: #fff;
+  }
+
+.cmpEmailInput{
+  display: inline-block;
+  background: url("../img/email_icon.png") no-repeat 3px 4px;
+  background-color: #e9e9e9;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 2px 3px 2px 21px;
+  line-height: 0px;
+}
+  .cmpEmailInput > input{
+    border: 0px;
+    background: transparent;
+    color: #7a7c7b;
+    font: 12px Arial, Tahoma, Verdana, sans-serif;
+    padding: 0px;
+  }
+  .cmpEmailInput > input:invalid{
+    border: 0px;
+    box-shadow: none;
+  }
+
+.cmpGroupBox{
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 15px;
+  position: relative;
+}
+  .cmpGroupBox > [goal="title"]{
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: -9px;
+    color: #f48d00;
+    font: 11px Arial, Tahoma, Verdana, sans-serif;
+    background-color: #fff;
+    padding: 0px 4px;
+  }
+
+.cmpInfoBlock{
+  position: relative;
+  display: inline-block;
+  width: 250px;
+}
+  .cmpInfoBlock [goal="messageBlock"]{
+    position: relative;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+    .cmpInfoBlock [goal="message"],
+    .cmpInfoBlock [goal="corner"]{
+      background: #eff2f2;
+    }
+    .cmpInfoBlock [goal="message"]{
+      padding: 15px 15px 20px 15px;
+    }
+    .cmpInfoBlock [goal="corner"]{
+      background: url("../img/message_corner.png") no-repeat left top;
+      width: 28px;
+      height: 31px;
+      border-radius: 0px 100% 100% 0px;
+      position: absolute;
+      bottom: -26px;
+      right: 10%;
+    }
+  .cmpInfoBlock [goal="personBlock"]{
+    position: relative;
+    top: 15px;
+    right: 23%;
+    text-align: right;
+  }
+    .cmpInfoBlock img{
+      float: right;
+      margin-left: 10px;
+    }
+    .cmpInfoBlock [goal="name"]{
+      color: #55585d;
+      font-weight: bold;
+      padding-top: 5px;
+    }
+    .cmpInfoBlock [goal="description"]{
+      color: #7a8382;
+    }
+
+.cmpMessageBlock{
+  display: block;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+  padding: 8px 8px 8px 30px;
+  border: 1px solid;
+  font-weight: bold;
+  background: url("../img/info_icon.png") 5px center no-repeat;
+
+}
+.cmpMessageBlock[theme="info"]{
+  color: #5390a5;
+  background-color: #e4f5fd;
+  border-color: #aedbee;
+}
+  .cmpMessageBlock [goal="close"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url("../img/close_icon.png") left top no-repeat;
+    width: 7px;
+    height: 7px;
+  }
+
+.cmpLinkButton{
+  display: inline-block;
+  color: #2a7fa8;
+}
+  .cmpLinkButton img{
+    float: left;
+    margin-right: 5px;
+  }

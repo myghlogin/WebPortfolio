@@ -1,0 +1,269 @@
+/* COMMON */
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+header, nav, section, aside, footer
+{
+	display: block;
+}
+
+div
+{
+	border: 0px solid black;
+}
+#menu, #hedaer, #content, #footer
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* MENU */
+
+nav
+{
+	background: url(../img/logo_background.jpg) repeat-x;
+}
+
+#menu
+{
+	height: 87px;
+	position: relative;
+}
+
+#menu img
+{
+	display: block;
+	position: absolute;
+	top: 10px;
+}
+
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#menu ul
+{
+	position: absolute;
+	top: 25px;
+	right: 0px;
+}
+
+#menu li
+{
+	float: left;
+}
+
+#menu li a
+{
+	display:block;
+	padding: 10px 0px;
+	font: bold 13pt Arial;
+	color: #2f57a1;
+	text-align: center;
+	background: none;
+	text-decoration: none;
+	width: 100px;
+}
+
+#menu li a:hover
+{
+	background: url(../img/logo_selected_item_backgd.png) no-repeat center;
+	color: black;
+}
+
+/* HEADER */
+
+header
+{
+	background: url(../img/header_backgd.jpg) repeat-x;
+}
+
+#header
+{
+	width: 100%;
+	height: 496px;
+	background: url(../img/header.jpg) no-repeat center;
+}
+
+/* CONTENT */
+
+section
+{
+	background: #dbdfeb;
+}
+
+#content
+{
+}
+
+	/* BLURB */
+
+	#letsStart
+	{
+		background: url(../img/blurb_backgd.png) no-repeat center top;
+		height: 151px;
+		padding-top: 25px;
+	}
+
+	#letsStart  span
+	{
+		display: block;
+		padding: 0px;
+		color: #132445;
+		font: 30pt Arial;
+		overflow: hidden;
+	}
+
+	#letsStart  a
+	{
+		display: block;
+		width: 343px;
+		float: right;
+	}
+
+	/* TOP BLOCKS */
+
+	h3
+	{
+		display: inline;
+	}
+
+	#topBlocks
+	{
+		display: inline-block;
+	}
+
+	.infoBlock
+	{
+		float: left;
+		width: 190px;
+		border: 1px #bfc4d1 solid;
+		border-radius: 3px;
+		box-shadow: 0px 0px 10px rgba(60,71,98,0.8);
+		background: white;	
+		margin: 10px 15px;
+		padding: 10px;
+	}
+	
+	.infoBlock img
+	{
+		border: 1px #cdcdcd solid;
+		padding: 3px;
+	}
+
+	.baseInfoBlock h3, .baseInfoBlock p, .infoBlock h3, .infoBlock p
+	{
+		color: black;
+	}
+	.infoBlock h3
+	{
+		font: bold 20pt Arial;
+	}
+
+	.baseInfoBlock p, .infoBlock p
+	{
+		font: 13pt Arial;
+	}
+
+	.infoBlock a
+	{
+		background: url(../img/content_btn_backgd.png) no-repeat center;
+		background-size: contain;
+		text-decoration: none;
+		text-align: center;
+		font: 12pt Arial;
+		color: #2945c0;
+		width: 119px;
+		height: 29px;
+		display: block;
+		padding-top: 8px;
+	}
+
+	.baseInfoBlock h3
+	{
+		font: bold 15pt Arial;
+		display: inline;
+	}
+
+	.baseInfoBlock a
+	{
+		text-decoration: underline;
+		font: 12pt Arial;
+		color: #2945c0;
+	}	
+	
+	/* BOTTOM BLOCKS */
+
+	#bottomLefts
+	{
+		width: 500px;
+		float: left;
+		min-height: 410px;
+	}
+
+	#bottomLefts > div
+	{
+		float: left;
+		width: 240px;
+		padding: 2px;
+	}
+
+	#bottomAbout
+	{
+		overflow: hidden;
+		min-height: 410px;
+	}
+
+/* FOOTER */
+
+footer
+{
+	background: #565f81;
+}
+
+#footer
+{
+	height: 100px;
+	font: 12pt Arial;
+	color: #9fa8bd;
+	padding-top: 30px;
+}
+
+#left_footer
+{
+	width: 500px;
+	float: left;
+}
+
+#right_footer
+{
+	width: 180px;
+	float: right;
+}
+
+#connectWithUs
+{
+	width: 130px;
+	float: right; 
+}
+
+.underlineFont
+{
+	text-decoration: underline;
+}
+#footer a, .lighterFont
+{
+	color: #dadfeb;
+}
+
+.contuctUsBtns
+{
+	padding: 0px 2px;
+}

@@ -1,0 +1,164 @@
+p, li, ul, body, h1, h2, h3, h4, h5, h6
+{
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    border: 0px;
+    border-collapse: collapse;
+}
+
+body
+{
+    background: url("../img/backgd_page.jpg") left top repeat;
+    background-size: 200px;
+}
+
+.center
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.blockPadding
+{
+    padding: 0 100px 0 100px;
+}
+
+.error
+{
+    display: block;
+    border: 2px solid rgb(57, 161, 74);
+    background: rgb(141, 198, 63);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font: 10pt Tahoma,Verdana,Arial,sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 3px 5px 3px 5px;
+}
+
+h3, h5, p, input, span, li, th, td{
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    color: #040404;
+}
+
+h5, p, span, li, th, td {
+    font-size: 12pt;
+}
+
+th {
+    font-weight: bold;
+}
+
+h3 {
+    font: bold 20pt;
+    margin-bottom: 8px;
+}
+
+#main
+{
+    box-shadow: 0 0 10px rgba(1, 148, 68, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(1, 148, 68, 0.5);
+    border-left: 1px solid rgb(1, 148, 68);
+    border-right: 1px solid rgb(1, 148, 68);
+    background: rgb(57, 181, 74);
+}
+
+    #banner {
+        padding: 15px 0px 20px 100px;
+    }
+
+    #canvas2d{
+        border: 2px solid rgb(1, 148, 68);
+    }
+
+        #canvas2d > div {
+            font-family: 15px Tahoma, Verdana, Arial, sans-serif;
+            color: #040404;
+            border: 2px solid rgb(1, 148, 68);
+            text-align: center;
+            width: 580px;
+            padding: 100px 10px;
+        }
+
+    #matrix{
+        width: 600px;
+    }
+
+    input[type="button"]{
+        background: rgb(142, 198, 63);
+        border: 1px solid rgb(57, 161, 74);
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 4px 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="password"] {
+        margin-bottom: 10px;
+    }
+
+    #rules td:first-child {
+        border-right: 2px solid black;
+        width: 50px;
+    }
+
+    #rules td:nth-child(2) {
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #rules tr:nth-child(3n+1) > td:first-child {
+        background: url("../img/fruit1.png") no-repeat center center;
+    }
+
+    #rules tr:nth-child(3n+2) > td:first-child {
+        background: url("../img/fruit2.png") no-repeat center center;
+    }
+
+    #rules tr:nth-child(3n+3) > td:first-child {
+        background: url("../img/fruit3.png") no-repeat center center;
+    }
+
+    #rules tr:nth-child(3n+4) > td:first-child {
+        background: url("../img/fruit4.png") no-repeat center center;
+    }
+
+    #rules tr:nth-child(3n+5) > td:first-child {
+        background: url("../img/fruit5.png") no-repeat center center;
+    }
+
+    #recordList {
+        overflow: hidden;
+    }
+
+        #recordTable td, #recordTable th {
+            text-align: left;
+            padding-right: 20px;
+        }
+
+    #bestRecord
+    {
+        float: right;
+        width: 100px;
+        border: 1px solid rgb(57, 161, 74);
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background: rgb(142, 198, 63);
+        text-align: center;
+        padding: 8px;
+        margin-left: 10px;
+    }
+
+        #bestRecord > h5 {
+            font-weight: bold;
+        }
+
+        #bestRecord > p {
+            font: bold 30pt Verdana;
+        }

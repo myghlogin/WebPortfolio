@@ -9,7 +9,7 @@ Folders:
   <li>
     sites: contains completed sites
     <ul>
-      <li>firesnake: game like snake. Look at <a href="http://firesnake.esy.es/snake/">firesnake.esy.es</a>.</li>
+      <li>firesnake: game like snake.</li>
     </ul>
   </li>
 </ul>
